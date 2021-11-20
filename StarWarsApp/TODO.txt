@@ -1,0 +1,3 @@
+﻿** need to verify appBar tabs working. (simple text shown for that page)
+* change favicon.ico
+* make file that is list of each page and the api call that goes with it

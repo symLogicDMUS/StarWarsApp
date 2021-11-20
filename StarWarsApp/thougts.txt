@@ -1,0 +1,11 @@
+﻿Add star wars api in which class?
+get material components. From bootstrap?
+use material design card component for data on people, places, things,
+need to verify appBar tabs working. (simple text shown for that page)
+need api call for each page. Put in the OnGet method in the PageModel
+search bootstrap material design components
+start with pre tag displaying the json object for each person (or planet, or vehicle, etc)
+can loop over integer values of API request until a 404 returned
+each api call starts with "https://swapi.dev/api/"
+search making api call in c#
+use Rebel logo for favicon

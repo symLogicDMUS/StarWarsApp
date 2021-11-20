@@ -1,0 +1,37 @@
+﻿@page
+@model StarWarsApp.Pages.PeopleModel
+@{
+    ViewData["Title"] = "People";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<table class="table table-dark table-striped">
+<thead>
+<tr>
+    <th scope="col">Name</th>
+    <th scope="col">Gender</th>
+    <th scope="col">Birth Year</th>
+    <th scope="col">Hair Color</th>
+    <th scope="col">Eye Color</th>
+    <th scope="col">Mass</th>
+</tr>
+</thead>
+<tbody>
+    @foreach (PersonPage personPage in @Model.People)
+    {
+        foreach (Person person in personPage.results)
+        {
+            <tr>
+                <td>@person.name</td>
+                <td>@person.gender</td>
+                <td>@person.birth_year</td>
+                <td>@person.hair_color</td>
+                <td>@person.eye_color</td>
+                <td>@person.mass</td>
+            </tr>           
+        }            
+    }
+</tbody>
+</table>            
