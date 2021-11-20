@@ -29,34 +29,48 @@ namespace StarWarsApp.Pages
 
         public string population { get; set; }
     }
-    public class PlanetsModel : PageModel
-    {    
-        static HttpClient client = new HttpClient();
 
-        public async Task<Planet> GetPlanetAsync(string path)
+    public class PlanetPage
+    {
+        public string next { get; set; }
+        public string previous { get; set; }
+        public List<Planet> results { get; set; }
+    }
+
+
+    public class PlanetsModel : PageModel
+    {
+        static HttpClient client = new HttpClient();
+        public List<PlanetPage> Planets {get; set;}
+
+        public async Task<PlanetPage> GetPlanetPageAsync(string path)
         {
-            Planet planet = null;
+            PlanetPage planetPage = null;
             HttpResponseMessage response = await client.GetAsync(path);
             if (response.IsSuccessStatusCode)
             {
-                planet = await response.Content.ReadAsAsync<Planet>();
+                planetPage = await response.Content.ReadAsAsync<PlanetPage>();
 
             }
-            return planet;
+            return planetPage;
         }
         public async Task OnGetAsync()
         {
-            Planet planet = null;
+            PlanetPage planet = null;
+            List <PlanetPage> planets = new List<PlanetPage>();
             int count = 0;
             do
             {
                 count++;
-                planet = await this.GetPlanetAsync($"https://swapi.dev/api/planets/{count}");
-                if (planet != null)
-                {
-                    Console.WriteLine(planet.name);
-                }
-            } while (planet != null);
+                planet = await this.GetPlanetPageAsync($"https://swapi.dev/api/planets/?page={count}");
+                planets.Add(
+                    new PlanetPage { 
+                        next = planet.next, 
+                        previous = planet.previous, 
+                        results = planet.results 
+                    });
+            } while (planet.next != null);
+            Planets = planets;
         }
     }
 }

@@ -7,5 +7,10 @@ search bootstrap material design components
 start with pre tag displaying the json object for each person (or planet, or vehicle, etc)
 can loop over integer values of API request until a 404 returned
 each api call starts with "https://swapi.dev/api/"
-search making api call in c#
-use Rebel logo for favicon
+* search making api call in c#
+* use Rebel logo for favicon
+Planets is another
+same structure
+OnGetAsync method
+multiple pages also
+view side by side

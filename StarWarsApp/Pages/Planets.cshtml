@@ -7,6 +7,37 @@
 <head>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
-<div class="text-center">
-    Planets
-</div>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Rotational Period</th>
+            <th scope="col">Orbital Period</th>
+            <th scope="col">Diameter</th>
+            <th scope="col">Climate</th>
+            <th scope="col">Gravity</th>
+            <th scope="col">Terrain</th>
+            <th scope="col">Surface Water</th>
+            <th scope="col">Population</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (PlanetPage planetPage in @Model.Planets)
+        {
+            foreach (Planet planet in planetPage.results)
+        {
+                <tr>
+                    <td>@planet.name</td>
+                    <td>@planet.rotation_period</td>
+                    <td>@planet.orbital_period'</td>
+                    <td>@planet.diameter</td>
+                    <td>@planet.climate</td>
+                    <td>@planet.gravity</td>
+                    <td>@planet.terrain</td>
+                    <td>@planet.surface_water</td>
+                    <td>@planet.population</td>
+                </tr>           
+            }            
+        }
+    </tbody>
+</table>
