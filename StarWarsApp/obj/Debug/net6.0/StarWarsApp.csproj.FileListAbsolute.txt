@@ -27,4 +27,3 @@ C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\bin\Debug\net6.0\System.Net.
 C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Debug\net6.0\StarWarsApp.csproj.CopyComplete
-C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Debug\net6.0\StarWarsApp.csproj.AssemblyReference.cache
