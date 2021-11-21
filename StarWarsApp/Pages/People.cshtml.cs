@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 
 namespace StarWarsApp.Pages
@@ -59,6 +60,7 @@ namespace StarWarsApp.Pages
             }
             return personPage;
         }
+        
         public async Task OnGetAsync()
         {
             int count = 0;

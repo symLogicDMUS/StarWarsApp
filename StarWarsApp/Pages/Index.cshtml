@@ -5,8 +5,32 @@
 }
 
 <head>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <title>Home</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
 </head>
-<div class="vstack" style="width:100%;height:calc(100vh - 120px);">
-    <img src="~/images/a long time ago.svg" style="margin:auto;" />
-</div>
+@*<div class="vstack" style="width:100%;height:calc(100vh - 120px);">*@
+    <img 
+        srcset="
+                ~/640x1136.jpg  640w,
+                ~/750x1334.jpg  750w,
+                ~/1024x536.jpg  1024w, 
+                ~/1280x1024.jpg 1280w, 
+                ~/1366x768.jpg  1366w, 
+                ~/1440x900.jpg  1440w,
+                ~/1536x864.jpg  1536w,
+                ~/1600x900.jpg  1600w, 
+                ~/1680x1050.jpg 1680w,
+                ~/1920X1080.jpg 1920w"
+        sizes=" 
+                (max-width:640px)  100%
+                (max-width:750px)  100%
+                (max-width:1024px) 100% 
+                (max-width:1280px) 100%
+                (max-width:1366px) 100%
+                (max-width:1440px) 100%
+                (max-width:1536px) 100%
+                (max-width:1600px) 100%
+                (max-width:1680px) 100%
+                (max-width:1920px) 100%"
+    />
+@*</div>*@
