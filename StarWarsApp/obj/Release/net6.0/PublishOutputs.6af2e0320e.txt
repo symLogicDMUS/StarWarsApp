@@ -1,0 +1,11 @@
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\StarWarsApp.exe
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\deleteMe.json
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\StarWarsApp.dll
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\StarWarsApp.deps.json
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\StarWarsApp.runtimeconfig.json
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\StarWarsApp.pdb
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\System.Net.Http.Formatting.dll
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\bjrat\source\repos\StarWarsApp\StarWarsApp\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
