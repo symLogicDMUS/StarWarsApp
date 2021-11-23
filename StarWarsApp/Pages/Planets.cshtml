@@ -7,7 +7,7 @@
 <head>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
-<table class="table table-dark table-striped">
+<table class="table table-dark table-striped" id="planets">
     <thead>
         <tr>
             <th scope="col">Name</th>
@@ -25,7 +25,7 @@
         @foreach (PlanetPage planetPage in @Model.Planets)
         {
             foreach (Planet planet in planetPage.results)
-        {
+            {
                 <tr>
                     <td>@planet.name</td>
                     <td>@planet.rotation_period</td>

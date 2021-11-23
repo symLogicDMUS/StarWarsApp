@@ -10,7 +10,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "957049dc-3bc5-4dfa-b342-a1f1caaac741": {
+      "ProjectGuid": "957049dc-3bc5-4dfa-b342-a1f1caaac741",
+      "DisplayName": "Star Wars People Places Things",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

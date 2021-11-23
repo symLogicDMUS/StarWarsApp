@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JkaoQSPr8sxc5UiZ3LuO49xlsWAn1n9O1ulzNwfcVGc=",
+  "Hash": "n4b+YsTFj0tJyw0cxoDWCbmlhhZM2HEMlst9eACZDEg=",
   "Source": "StarWarsApp",
   "BasePath": "_content/StarWarsApp",
   "Mode": "Default",
@@ -100,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1024x576.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\bjrat\\source\\repos\\StarWarsApp\\StarWarsApp\\wwwroot\\images\\1080x1920.jpg",
-      "SourceId": "StarWarsApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bjrat\\source\\repos\\StarWarsApp\\StarWarsApp\\wwwroot\\",
-      "BasePath": "_content/StarWarsApp",
-      "RelativePath": "images/1080x1920.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\1080x1920.jpg"
     },
     {
       "Identity": "C:\\Users\\bjrat\\source\\repos\\StarWarsApp\\StarWarsApp\\wwwroot\\images\\1280x1024.jpg",
@@ -338,6 +321,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\lg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\bjrat\\source\\repos\\StarWarsApp\\StarWarsApp\\wwwroot\\images\\more.svg",
+      "SourceId": "StarWarsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bjrat\\source\\repos\\StarWarsApp\\StarWarsApp\\wwwroot\\",
+      "BasePath": "_content/StarWarsApp",
+      "RelativePath": "images/more.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\more.svg"
     },
     {
       "Identity": "C:\\Users\\bjrat\\source\\repos\\StarWarsApp\\StarWarsApp\\wwwroot\\images\\Redstarbird.svg",

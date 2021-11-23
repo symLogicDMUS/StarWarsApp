@@ -41,7 +41,7 @@ namespace StarWarsApp.Pages
     public class PlanetsModel : PageModel
     {
         static HttpClient client = new HttpClient();
-        public List<PlanetPage> Planets {get; set;}
+        public List<PlanetPage> Planets { get; set; }
 
         public async Task<PlanetPage> GetPlanetPageAsync(string path)
         {
@@ -50,14 +50,13 @@ namespace StarWarsApp.Pages
             if (response.IsSuccessStatusCode)
             {
                 planetPage = await response.Content.ReadAsAsync<PlanetPage>();
-
             }
             return planetPage;
         }
         public async Task OnGetAsync()
         {
             PlanetPage planet = null;
-            List <PlanetPage> planets = new List<PlanetPage>();
+            List<PlanetPage> planets = new List<PlanetPage>();
             int count = 0;
             do
             {

@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Star Wars: People, Places, Things</title>
+    <meta name="viewport" content="width=device-'width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Star Wars: People, Places, Things </title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/StarWarsApp.styles.css" asp-append-version="true" />
@@ -19,27 +19,38 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Planets">Planets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Spaceships">Spaceships</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Vehicles">Vehicles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/People">People</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Films">Films</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Species">Species</a>
-                        </li>
+                        @{
+                            string[] titles = 
+                            {
+                                "Planets",
+                                "Spaceships",
+                                "Vehicles",
+                                "People",
+                                "Films",
+                                "Species"
+                            };
+
+                            string getClass(string title)
+                            {
+                                if (@ViewData["Title"] == title) 
+                                {
+                                    return "text-active-dark";
+                                }
+                                else {
+                                    return "text-dark";
+                                }
+                            }
+
+                            <li class="nav-item">
+                                <a class="nav-link @getClass("Home page")" asp-area="" asp-page="/Index">Home</a>
+                            </li>
+                            @foreach (string title in titles)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link @getClass(@title)" asp-area="" asp-page="/@title">@title</a>
+                                </li>  
+                            }
+                        }
                     </ul>
                 </div>
             </div>
@@ -50,13 +61,6 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - StarWarsApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -6,31 +6,38 @@
 
 <head>
     <title>Home</title>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/images/css/site.css" asp-append-version="true"/>
 </head>
-@*<div class="vstack" style="width:100%;height:calc(100vh - 120px);">*@
-    <img 
-        srcset="
-                ~/640x1136.jpg  640w,
-                ~/750x1334.jpg  750w,
-                ~/1024x536.jpg  1024w, 
-                ~/1280x1024.jpg 1280w, 
-                ~/1366x768.jpg  1366w, 
-                ~/1440x900.jpg  1440w,
-                ~/1536x864.jpg  1536w,
-                ~/1600x900.jpg  1600w, 
-                ~/1680x1050.jpg 1680w,
-                ~/1920X1080.jpg 1920w"
-        sizes=" 
-                (max-width:640px)  100%
-                (max-width:750px)  100%
-                (max-width:1024px) 100% 
-                (max-width:1280px) 100%
-                (max-width:1366px) 100%
-                (max-width:1440px) 100%
-                (max-width:1536px) 100%
-                (max-width:1600px) 100%
-                (max-width:1680px) 100%
-                (max-width:1920px) 100%"
-    />
-@*</div>*@
+<div class="vstack home">
+    <picture>
+        <source srcset="~/images/640x1136.jpg" media="(max-width: 750px)" />
+        <source srcset="~/images/750x1334.jpg" media="(min-width: 750px) and (max-width: 1024px)" />
+        <source srcset="~/images/1024x576.jpg" media="(min-width: 1024px) and (max-width: 1280px)" />
+        <source srcset="~/images/1280x1024.jpg" media="(min-width: 1280px) and (max-width: 1366px)" />
+        <source srcset="~/images/1366x768.jpg" media="(min-width: 1366px) and (max-width: 1440px)" />
+        <source srcset="~/images/1440x900.jpg" media="(min-width: 1440px) and (max-width: 1536px)" />
+        <source srcset="~/images/1536x864.jpg" media="(min-width: 1536px) and (max-width: 1600px)" />
+        <source srcset="~/images/1600x900.jpg" media="(min-width: 1600px) and (max-width: 1680px)" />
+        <source srcset="~/images/1680x1050.jpg" media="(min-width: 1680px) and (max-width: 1920px)" />
+        <source srcset="~/images/1920x1080.jpg" media="(min-width: 1920px)" />
+        <img srcset="
+                    ~/images/640x1136.jpg
+                    ~/images/750x1334.jpg
+                    ~/images/1024x576.jpg
+                    ~/images/1280x1024.jpg
+                    ~/images/1366x768.jpg
+                    ~/images/1440x900.jpg
+                    ~/images/1536x864.jpg
+                    ~/images/1600x900.jpg
+                    ~/images/1680x1050.jpg
+                    ~/images/1920x1080.jpg
+                    "
+            class="home-image"
+        />
+    </picture>
+</div>
+<footer class="fixed-bottom text-muted" style="background-color:#000;padding:4px;">
+    <div class="container">
+        <a href="https://wallpapersafari.com/w/VjXcwk">Image Source </a>
+    </div>
+</footer>
